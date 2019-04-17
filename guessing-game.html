@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/guessing-game.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- GAME SECTION -->
+  <section id="game">
+
+    <!-- GAME TITLE -->
+      <h1>Guessing Game</h1>
+
+      <!-- EMOJI IMAGE -->
+      <img src="img/thinking-emoji.png" class="centerImage" alt="Thinking Emoji" width="150">
+       
+      <!-- MAIN OUTPUT -->
+       <p id="output">I'm thinking of a number between 1 - 50, can you guess it?</p>
+
+       <!-- USER SECTION -->
+       <div class="userSection">
+
+            <!-- USER INPUT FIELD -->
+           <input type="text" id="guessInput" placeholder="Make a guess">
+
+           <br><br>
+
+           <!-- TRY BUTTONS -->
+           <button type="button" class="remove" id="guess1">Try 1</button>
+           <button type="button" class="remove" id="guess2">Try 2</button>
+           <button type="button" class="remove" id="guess3">Try 3</button>
+
+           <!-- RETRY BUTTON -->
+           <button type="button" id="retry">Try Again</button>
+
+       </div>
+
+       <!-- ANSWERS -->
+       <p id="answers"></p>
+
+       <!-- RANDOM NUMBER -->
+       <p id="number"></p>
+
+        <!-- USER RESULTS -->
+       <p id="result1"></p>
+       <p id="result2"></p>
+       <p id="result3"></p>
+   
+   </section>
+   <!-- GAME SECTION END -->
+
+   <!-- SCRIPTS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/guessing-game.js"></script>
+    
+</body>
+</html>
